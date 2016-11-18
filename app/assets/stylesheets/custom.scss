@@ -3,3 +3,100 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+
+$main_color: #BC072D;
+$main_color_dark: #A30627;
+$main_color_light: #ffecf0;
+
+$main_color_v2: #EC093A;
+
+// Main colors
+header,
+.top-bar {
+    background: $main_color !important;
+}
+.top-links {
+    background: $main_color_dark;
+}
+.highlight {
+    background: $main_color_light;
+}
+.button {
+    background: $main_color_dark;
+}
+.button:hover {
+    background: $main_color;
+}
+.footer {
+    border-top-color: $main_color;
+    background: $main_color_light;
+}
+.footer p,
+.footer h2,
+.footer a {
+    //color: #fff !important;
+}
+footer h2 a {
+    border-bottom: none;
+}
+
+// Debate & propuestas
+h3.sidebar-title {
+    border-top-color: $main_color_dark;
+}
+.categories a {
+    background: $main_color_light;
+    color: $main_color_dark;
+}
+.categories a:hover {
+    background: $main_color_dark;
+    color: #fff;
+}
+.debate .votes {
+    background: $main_color;
+    border-color: $main_color;
+}
+.debate .votes .icon-like,
+.debate .votes .icon-unlike {
+    border-color: $main_color;
+}
+.participation-not-allowed {
+    background: $main_color_light;
+}
+.banner-style-one,
+.banner-style-two,
+.banner-style-three {
+    background-color: $main_color_v2;
+}
+.debate .panel .label-debate,
+.debate .panel .icon-debates {
+    color: $main_color_dark;
+}
+.pagination .current {
+    background: $main_color_dark;
+}
+.subnavigation ul li a.active {
+    color: $main_color_dark;
+    border-bottom-color: $main_color_dark;
+}
+.subnavigation ul li a:hover {
+    color: $main_color_dark;
+}
+.submenu a.active {
+    border-bottom-color: $main_color_dark;
+    color: $main_color_dark
+}
+
+// Login page
+.auth-page {
+    background-color: $main_color;
+}
+
+// Logo
+.top-bar .top-bar-title a img,
+.auth-page h1:not(.logo) img {
+    margin: 0.5em;
+    height: 55px;
+    width: auto;
+}
+
