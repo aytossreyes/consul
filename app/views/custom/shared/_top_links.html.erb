@@ -1,0 +1,20 @@
+<div class="top-links hide-for-small-only">
+  <div class="row">
+    <%= render "shared/locale_switcher" %>
+    <ul class="no-bullet external-links">
+      <li class="inline-block">
+        <%= link_to t("layouts.header.more_information"),
+                    page_path('more_information'),
+                    class: ("selected" if current_page?("/more_information")),
+                    accesskey: "i"  %>
+      </li>
+      <% if setting['blog_url'] %>
+        <li class="inline-block">|&nbsp;
+          <%= link_to setting['blog_url'], title: t('shared.target_blank_html'), target: "_blank" do %>
+            <%= t("layouts.header.external_link_blog") %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
