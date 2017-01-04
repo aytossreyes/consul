@@ -57,6 +57,10 @@ Setting["org_name"] = "Consul"
 # Consul installation place name (City, Country...)
 Setting["place_name"] = "Consul-land"
 
+# Meta tags for SEO
+Setting["meta_description"] = nil
+Setting["meta_keywords"] = nil
+
 # Feature flags
 Setting['feature.debates'] = true
 Setting['feature.spending_proposals'] = true
@@ -86,3 +90,6 @@ Setting['direct_message_max_per_day'] = 3
 # Email settings
 Setting['mailer_from_name'] = 'Consul'
 Setting['mailer_from_address'] = 'noreply@consul.dev'
+
+# Verification settings
+Setting['verification_offices_url'] = 'http://oficinas-atencion-ciudadano.url/'
