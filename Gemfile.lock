@@ -521,6 +521,7 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   sprockets (~> 3.7.1)
+  therubyracer
   tolk (~> 2.0.0)
   turbolinks
   turnout (~> 2.4.0)
