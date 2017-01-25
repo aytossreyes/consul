@@ -8,6 +8,12 @@
                     class: ("selected" if current_page?("/more_information")),
                     accesskey: "i"  %>
       </li>
+      <li class="inline-block">|&nbsp;
+        <%= link_to 'Participación Ciudadana', 'http://www.ssreyes.org/es/portal.do?NM=2&IDM=48', target: '_blank' %>
+      </li>
+      <li class="inline-block">|&nbsp;
+        <%= link_to 'Portal de transparencia', 'http://www.ssreyes.org/transparencia/portal.do', target: '_blank' %>
+      </li>
       <% if setting['blog_url'] %>
         <li class="inline-block">|&nbsp;
           <%= link_to setting['blog_url'], title: t('shared.target_blank_html'), target: "_blank" do %>
