@@ -4,13 +4,13 @@
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
 
+// Custom colors
 $main_color: #BC072D;
 $main_color_dark: #A30627;
 $main_color_light: #ffecf0;
-
 $main_color_v2: #EC093A;
 
-// Main colors
+// Header and footer
 header,
 .top-bar {
     background: $main_color !important;
@@ -39,10 +39,108 @@ header,
 footer h2 a {
     border-bottom: none;
 }
+.top-links a:hover,
+.top-links a:focus,
+.top-links a:active {
+  color: $white;
+}
+.top-bar ul.menu > li a.button {
+  color: $main_color_dark;
+}
 
-// Debate & propuestas
-h3.sidebar-title {
-    border-top-color: $main_color_dark;
+// Globals
+a {
+    color: $main_color_dark;
+}
+a:hover, a:focus, a:active {
+    color: $main_color_dark;
+}
+a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6, a:active h1, a:active h2, a:active h3, a:active h4, a:active h5, a:active h6 {
+    color: $main_color_dark;
+}
+.callout.primary {
+    border-color: $main_color_light;
+    background: $main_color_light;
+    color: $text;
+}
+.callout.alert, .callout.error {
+    background-color: $main_color;
+    border-color: $main_color;
+    color: $white;
+}
+.dark-heading {
+    background: $main_color;
+}
+.dark-heading .info {
+    border-top: 0.375rem solid $main_color_light;
+    background: $main_color_dark;
+}
+.dark-heading p.title {
+    color: $white;
+}
+.participation-not-allowed {
+    background: $main_color_light;
+    color: $text;
+}
+.participation-not-allowed p,
+.participation-not-allowed a {
+    color: $text !important;
+}
+.verify-account .already-verified {
+    color: $text;
+}
+
+// Buttons
+.button.warning {
+    background: $main_color_dark;
+}
+.button.hollow.warning:hover, .button.hollow.warning:focus {
+    border-color: $main_color_dark;
+    color: $white;
+}
+.button.hollow.warning {
+    color: $white;
+    border: 1px solid $main_color_dark;
+}
+.button.hollow.warning:hover, .button.hollow.warning:focus {
+    background-color: $main_color_dark;
+}
+.button.success {
+    background-color: $main_color_dark;
+}
+.button.success:hover, .button.success:focus {
+    background-color: $main_color_dark;
+}
+.delete, .delete:hover, .delete:active, .delete:focus {
+    color: $main_color_dark;
+}
+
+// Components
+.banner-style-one,
+.banner-style-two,
+.banner-style-three {
+    background-color: $main_color_v2;
+}
+.pagination .current {
+    background: $main_color_dark;
+}
+.subnavigation ul li a.active {
+    color: $main_color_dark;
+    border-bottom-color: $main_color_dark;
+}
+.menu.simple li.active {
+    border-bottom: 2px solid  $main_color_dark;
+    color:  $main_color_dark;
+}
+.submenu a:hover {
+    color: $main_color_dark;
+}
+.subnavigation ul li a:hover {
+    color: $main_color_dark;
+}
+.submenu a.active {
+    border-bottom-color: $main_color_dark;
+    color: $main_color_dark
 }
 .categories a {
     background: $main_color_light;
@@ -52,6 +150,66 @@ h3.sidebar-title {
     background: $main_color_dark;
     color: #fff;
 }
+.activity table td::before {
+    color:  $main_color_dark;
+}
+.advanced-search {
+    float: none;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    position: relative;
+}
+.advanced-search-form {
+    margin-top: 1rem;
+}
+h2.sidebar-title {
+    border-top: 2px solid $main_color_dark;
+}
+h3.sidebar-title {
+    border-top-color: $main_color_dark;
+}
+
+// Page components
+.debate-show .author a:hover, .proposal-show .author a:hover, .investment-project-show .author a:hover, .budget-investment-show .author a:hover, .debate-show .author a:focus, .proposal-show .author a:focus, .investment-project-show .author a:focus, .budget-investment-show .author a:focus, .debate-show .author a:active, .proposal-show .author a:active, .investment-project-show .author a:active, .budget-investment-show .author a:active {
+    color: $main_color_dark !important;
+}
+.debate .panel .label-budget-investment, .proposal .panel .label-budget-investment, .investment-project .panel .label-budget-investment, .budget-investment .panel .label-budget-investment,
+.debate .panel .icon-budget, .proposal .panel .icon-budget, .investment-project .panel .icon-budget, .budget-investment .panel .icon-budget {
+    color: $main_color_dark;
+}
+.debate .panel .label-proposal, .proposal .panel .label-proposal, .investment-project .panel .label-proposal, .budget-investment .panel .label-proposal,
+.debate .panel .icon-proposals, .proposal .panel .icon-proposals, .investment-project .panel .icon-proposals, .budget-investment .panel .icon-proposals {
+    color: $main_color_dark;
+}
+.debate-show .supports .button-support, .proposal-show .supports .button-support, .investment-project-show .supports .button-support, .budget-investment-show .supports .button-support,
+.proposal .supports .button-support {
+    background: $main_color_light;
+}
+.debate-show .supports .button-support:hover, .debate-show .supports .button-support:active, .proposal-show .supports .button-support:hover, .proposal-show .supports .button-support:active, .investment-project-show .supports .button-support:hover, .investment-project-show .supports .button-support:active, .budget-investment-show .supports .button-support:hover, .budget-investment-show .supports .button-support:active,
+.proposal .supports .button-support:hover, .proposal .supports .button-support:active {
+    background: $main_color_dark;
+    color: $white;
+}
+.debate-show .supports .progress, .proposal-show .supports .progress, .investment-project-show .supports .progress, .budget-investment-show .supports .progress,
+.proposal .supports .progress {
+    background: $main_color_light;
+    border: 1px solid $main_color_light;
+}
+.debate-show .supports .progress .meter, .proposal-show .supports .progress .meter, .investment-project-show .supports .progress .meter, .budget-investment-show .supports .progress .meter,
+.proposal .supports .progress .meter {
+    background: $main_color;
+}
+.debate .panel .label-investment-project, .proposal .panel .label-investment-project, .investment-project .panel .label-investment-project, .budget-investment .panel .label-investment-project {
+    color:  $main_color_dark !important;
+}
+.investment-project .supports .total-supports, .investment-project-show .supports .total-supports, .budget-investment .supports .total-supports, .budget-investment-show .supports .total-supports {
+    color:  $main_color_dark !important;
+}
+.debate .panel p, .proposal .panel p, .investment-project .panel p, .budget-investment .panel p {
+    color: $text !important;
+}
+
+// Debate
 .debate .votes {
     background: $main_color;
     border-color: $main_color;
@@ -60,39 +218,79 @@ h3.sidebar-title {
 .debate .votes .icon-unlike {
     border-color: $main_color;
 }
-.participation-not-allowed {
-    background: $main_color_light;
-}
-.banner-style-one,
-.banner-style-two,
-.banner-style-three {
-    background-color: $main_color_v2;
-}
 .debate .panel .label-debate,
 .debate .panel .icon-debates {
     color: $main_color_dark;
 }
-.pagination .current {
+.debate .votes .like span.percentage, .debate .votes .unlike span.percentage, .debate-show .votes .like span.percentage, .debate-show .votes .unlike span.percentage {
+    color: $white;
+}
+.debate .votes .total-votes, .debate-show .votes .total-votes {
+    color: $white;
+}
+.debate .panel {
+    padding: 0.75rem 0.75rem 0 0.75rem;
+    
+    @include breakpoint(medium) {
+        padding: 0 0 0 0.75rem;
+    }
+}
+.debate .votes {
+    padding: 1.5rem 1rem;
+  
+    @include breakpoint(medium) {
+        padding: 1.5rem 0;
+    }
+}
+.debate .panel .debate-content {
+    padding-top: 0.75rem;
+}
+.debate-show aside h2, .proposal-show aside h2, .investment-project-show aside h2, .budget-investment-show aside h2 {
+    border-top: 2px solid $main_color_dark;
+}
+.debate-show .author a, .proposal-show .author a, .investment-project-show .author a, .budget-investment-show .author a {
+    color: $main_color_dark !important;
+}
+
+// Budgets
+.expanded.budget {
+    background: $main_color_light;
+}
+.expanded.budget.button {
+    background: $main_color_dark;
+    color: $white;
+}
+.expanded.budget h1, .expanded.budget h2, .expanded.budget p, .expanded.budget a.back, .expanded.budget .icon-angle-left {
+    color: $text;
+}
+.expanded.budget .info {
+    border-top: none;
     background: $main_color_dark;
 }
-.subnavigation ul li a.active {
-    color: $main_color_dark;
-    border-bottom-color: $main_color_dark;
+.expanded.budget .info p,
+.expanded.budget .info h2 {
+    color: $white;
 }
-.subnavigation ul li a:hover {
+.expanded.budget .button {
     color: $main_color_dark;
 }
-.submenu a.active {
-    border-bottom-color: $main_color_dark;
-    color: $main_color_dark
+.jumbo-budget {
+    background: $main_color;
+}
+.budget-investment-show .label-budget-investment,
+.budget-investment-show .icon-budget {
+    color: $main_color;
 }
 
 // Login page
 .auth-page {
-    background-color: $main_color;
-    background: $main_color;
+    // background-color: $main_color;
+    // background: $main_color;
 }
-
+.auth-image h1 img {
+    height: auto;
+    width: 3rem;
+}
 // Logo
 .top-bar .top-bar-title a img,
 .auth-page h1:not(.logo) img {
@@ -100,7 +298,6 @@ h3.sidebar-title {
     height: 55px;
     width: auto;
 }
-
 .auth-image {
     background-color: $main_color;
     background: $main_color;
